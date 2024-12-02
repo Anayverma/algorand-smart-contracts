@@ -220,8 +220,7 @@ export default function ContractInteraction() {
       }
   
       const atc = new algosdk.AtomicTransactionComposer();
-      const mnemonic = "start lawsuit remember fuel race direct shock brother forward area blouse december next exist ancient liberty round symbol process harsh slim under swap above frost";
-  
+
       const recoveredAccount = algosdk.mnemonicToSecretKey(mnemonic);
   
       const senderAddress = recoveredAccount.addr;
