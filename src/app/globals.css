@@ -2,3 +2,129 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .contract-interaction-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    color: #4a90e2;
+  }
+  
+  .wallet-actions {
+    margin-top: 15px;
+  }
+  
+  .connect-btn,
+  .disconnect-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .connect-btn:hover,
+  .disconnect-btn:hover {
+    background-color: #357ab7;
+  }
+  
+  .connected-wallet {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contract-state-section,
+  .method-call-section {
+    margin-top: 30px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .fetch-state-btn,
+  .call-method-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .fetch-state-btn:hover,
+  .call-method-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .method-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .method-response {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    border: 1px solid #4caf50;
+    word-wrap: break-word;
+  }
+  
+  .contract-state {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-height: 300px;
+    overflow-y: auto;
+    font-family: 'Courier New', monospace;
+  }
+  
